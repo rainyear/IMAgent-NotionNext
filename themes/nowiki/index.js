@@ -48,9 +48,9 @@ const LayoutBase = props => {
       className={`${siteConfig('FONT_STYLE')} dark:text-gray-300  bg-white dark:bg-black scroll-smooth`}>
       <Style />
 
-      {/* 页头 */}
+      {/* 页头 - EDIT: remove title*/}
       <Header {...props} />
-      {/* 标题栏 */}
+      {/* 标题栏 - EDIT: delete */}
       <TitleBar {...props} />
 
       {/* 主体 */}

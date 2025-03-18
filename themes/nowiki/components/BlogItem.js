@@ -17,7 +17,7 @@ const BlogItem = ({ post }) => {
 
   return (
     <article
-      className={`${showPageCover ? 'flex md:flex-row flex-col-reverse' : ''} replace mb-12 `}>
+      className={`${showPageCover ? 'flex md:flex-row flex-col-reverse' : ''} replace rounded shadow mb-12 p-4 `}>
       <div className={`${showPageCover ? 'md:w-7/12' : ''}`}>
         <h2 className='mb-4'>
           <Link
@@ -31,11 +31,11 @@ const BlogItem = ({ post }) => {
         </h2>
 
         <div className='mb-4 text-sm text-gray-700 dark:text-gray-300'>
-          by{' '}
-          <a href='#' className='text-gray-700 dark:text-gray-300'>
-            {siteConfig('AUTHOR')}
-          </a>{' '}
-          on {post.date?.start_date || post.createdTime}
+          {/* by{' '} */}
+          {/* <a href='#' className='text-gray-700 dark:text-gray-300'> */}
+            {/* {siteConfig('AUTHOR')} */}
+          {/* </a>{' '} */}
+          {post.date?.start_date || post.createdTime}
           <TwikooCommentCount post={post} className='pl-1' />
           {post.category && (
             <>

@@ -30,7 +30,7 @@ export default function TitleBar(props) {
             {title}
           </h1>
           <p className='title-2 relative leading-loose text-gray-dark z-10'>
-            {description}
+            {/* {description} */}
           </p>
           {TITLE_BG && (
             <>
